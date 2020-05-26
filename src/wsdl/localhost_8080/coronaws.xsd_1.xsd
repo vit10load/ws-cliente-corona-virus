@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://service.ws.teste.br.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.ws.teste.br.com/">
+
+<xs:element name="ReturnOnePerson" type="tns:ReturnOnePerson"></xs:element>
+
+<xs:element name="ReturnOnePersonResponse" type="tns:ReturnOnePersonResponse"></xs:element>
+
+<xs:element name="create" type="tns:create"></xs:element>
+
+<xs:element name="createResponse" type="tns:createResponse"></xs:element>
+
+<xs:element name="list" type="tns:list"></xs:element>
+
+<xs:element name="listResponse" type="tns:listResponse"></xs:element>
+
+<xs:element name="remove" type="tns:remove"></xs:element>
+
+<xs:element name="removeResponse" type="tns:removeResponse"></xs:element>
+
+<xs:element name="update" type="tns:update"></xs:element>
+
+<xs:element name="updateResponse" type="tns:updateResponse"></xs:element>
+
+<xs:complexType name="ReturnOnePerson">
+<xs:sequence>
+<xs:element name="index" type="xs:long" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReturnOnePersonResponse">
+<xs:sequence>
+<xs:element name="UmaPessoaRetornada" type="tns:pessoa" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pessoa">
+<xs:sequence>
+<xs:element name="cidade" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="data" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="id" type="xs:long" minOccurs="0"></xs:element>
+<xs:element name="idade" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="sexo" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remove">
+<xs:sequence>
+<xs:element name="index" type="xs:long" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="list">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listResponse">
+<xs:sequence>
+<xs:element name="listaPessoas" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="update">
+<xs:sequence>
+<xs:element name="index" type="xs:long" minOccurs="0"></xs:element>
+<xs:element name="Pessoa" type="tns:pessoa" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="create">
+<xs:sequence>
+<xs:element name="Pessoa" type="tns:pessoa" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+</xs:schema>

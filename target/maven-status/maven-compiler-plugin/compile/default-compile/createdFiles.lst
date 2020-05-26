@@ -1,0 +1,15 @@
+com\br\teste\ws\service\PessoaService.class
+com\br\teste\ws\service\Remove.class
+com\br\teste\ws\service\ListResponse.class
+com\br\teste\ws\service\ObjectFactory.class
+com\br\teste\ws\service\CreateResponse.class
+com\br\teste\ws\service\Update.class
+com\br\teste\ws\service\ReturnOnePersonResponse.class
+com\br\teste\ws\service\UpdateResponse.class
+com\br\teste\ws\service\Create.class
+com\br\teste\ws\service\RemoveResponse.class
+com\br\teste\ws\service\package-info.class
+com\br\teste\ws\service\PessoaServiceService.class
+com\br\teste\ws\service\List.class
+com\br\teste\ws\service\Pessoa.class
+com\br\teste\ws\service\ReturnOnePerson.class
